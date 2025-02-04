@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+header .logo a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #e03315;
+}
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  header ul.active {
+    display: flex;
+  }
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+.sobre-nosotros {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.sobre-nosotros h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+.sobre-nosotros .contenido {
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .sobre-nosotros .contenido {
+    flex-direction: column;
+  }
+}
+.sobre-nosotros .contenido .video {
+  flex: 1;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.sobre-nosotros .contenido .video video {
+  width: 100%;
+  height: auto;
+}
+.sobre-nosotros .contenido .info-sobre-nosotros {
+  flex: 2;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.productos-destacados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.productos-destacados .producto {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+.productos-destacados .producto:hover {
+  transform: translateY(-10px);
+}
+.productos-destacados .producto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.productos-destacados .producto h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.productos-destacados .producto p {
+  font-size: 1rem;
+  color: #555;
+}
+.productos-destacados .producto button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.productos-destacados .producto button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.ofertas-destacadas {
+  background-color: #f4a261;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #333;
+  color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+.footer-logo img {
+  height: 50px;
+}
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+.footer .social-icon {
+  color: #ddd;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer .social-icon:hover {
+  color: #00b4cc;
+}
+.footer .facebook {
+  color: #3b5998;
+}
+.footer .instagram {
+  color: #e1306c;
+}
+.footer .whatsapp {
+  color: #25d366;
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
